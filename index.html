@@ -3,11 +3,12 @@
 
 <head>
     <title>My UX Portfolio</title>
-    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link rel="stylesheet" href="CSS/index.css" type="text/css">
 </head>
 
 <body>
-    <header class="Navigation">
+    <!-- Sticky header JS interaction -->
+    <header class="Navigation" id="myNav">
         <div class="navContent">
             <div class="inline-block Logo">
                 <h1>Julian</h1>
@@ -35,7 +36,8 @@
             <p class="hello">Hello! <br> my name is Julian Aviles Illescas <br>
                 I am a UX/UI Designer
             </p>
-            <button class="resume">Resume</button>
+            <!-- JS interaction for button click -->
+            <button onclick="alert('You have no content here')" class="resume">Resume</button>
         </div>
     </section>
     <!-- My UX Skills section coded using CSS flex-->
@@ -80,22 +82,26 @@
             <div class="prodesc1">
                 <h4>Travel-together</h4>
                 <p>Project Description</p>
-                <button>View</button>
+                <!-- button will display console log -->
+                <button onclick="greet()" class="view1">View</button>
             </div>
             <div class="pro2"><img src="/images/Utah.flo.png" width="300px" height="300px"></div>
             <div class="prodesc2">
                 <h4>Utah-Flo</h4>
                 <p>Project Description</p>
-                <button>View</button>
+                <button onclick="greet()"  class="view2">View</button>
             </div>
             <div class="pro3"><img src="/images/BFA-redesign.png" width="360px"></div>
             <div class="prodesc3">
                 <h4>Best Friends Web Redesign</h4>
                 <p>Project Description</p>
-                <button>View</button>
+                <button onclick="greet()" class="view3">View</button>
             </div>
         </div>
     </section>
+    <!-- Button to return to top via JS -->
+        <button onclick="topFunction()" id="Btn" title="Back to top">Top</button>
+
     <script src="js/index.js"></script>
 </body>
 
